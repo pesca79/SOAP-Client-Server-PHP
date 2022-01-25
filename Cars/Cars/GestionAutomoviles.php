@@ -7,8 +7,8 @@ class GestionAutomovilesAuth {
 
     public function ConectarMarcas() {
         try {
-            $user = "coches";  // usuario con el que se va conectar con MySQL
-            $pass = "coches";  // contraseña del usuario
+            $user = "ies";  // usuario con el que se va conectar con MySQL
+            $pass = "daw";  // contraseña del usuario
             $dbname = "coches";  // nombre de la base de datos
             $host = "207.188.145.21";  // nombre o IP del host
 
