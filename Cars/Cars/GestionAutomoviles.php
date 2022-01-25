@@ -10,7 +10,7 @@ class GestionAutomovilesAuth {
             $user = "ies";  // usuario con el que se va conectar con MySQL
             $pass = "daw";  // contraseña del usuario
             $dbname = "coches";  // nombre de la base de datos
-            $host = "207.188.145.21";  // nombre o IP del host
+            $host = "localhost";  // nombre o IP del host
 
             $db = new PDO("mysql:host=$host; dbname=$dbname", $user, $pass);  //conectar con MySQL y SELECCIONAR LA Base de Datos
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  //Manejo de errores con PDOException
