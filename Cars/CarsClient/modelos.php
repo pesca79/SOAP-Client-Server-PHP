@@ -2,7 +2,8 @@
     require_once 'client.php';
     $marca = $_GET['marca'];
     $marcaWithoutQuotes = str_replace('\'', '', $marca);
-    $modelos = $client->ObtenerModelosPorMarca($marca);
+    $modelos = $client->ObtenerModelos($marca);
+    $marcas=$client->ObtenerMarcas();
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +44,7 @@
 ?>
 
     <figure>
-        <img src="Marcas/<?=strtolower($marcaWithoutQuotes)?>.png" alt="logo <?= $marcaWithoutQuotes?>" />
+        <img src="Marcas/<?=strtolower($marcas[$marca])?>.png" alt="logo <?= $marcas[$marca]?>" />
         <figcaption><?=$modelValue?></figcaption>
      </figure>
 
