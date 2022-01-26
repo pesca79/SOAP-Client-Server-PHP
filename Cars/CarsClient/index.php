@@ -49,11 +49,11 @@ foreach ($marcas as $idmarca => $valorMarca) {
 					<div class="inner">
 						<h2>Follow my social network</h2>
 						<ul class="icons">
-							<li><a href="https://twitter.com/pesca79"><img src="images/twitter.png" style="height:50px;width:50px"></a></li>
-							<li><a href="https://www.facebook.com/miguelangel.ruizmariscal"><img src="images/facebook.png" style="height:50px;width:50px"></a></li>
-							<li><a href="https://www.instagram.com/miguelangelruizmariscal/"><img src="images/instagram.png" style="height:50px;width:50px"></a></li>
-							<li><a href="https://wa.me/34686378229?text=Hola%20Caracola!"><img src="images/WhatsApp.png" style="height:50px;width:65px"></a></li>
-							<li><a href="mailto:marmariscal@hotmail.com"><img src="images/mail.png" style="height:50px;width:50px"></a></li>							
+							<li><a href="https://twitter.com/pesca79" target="blank"><img src="images/twitter.png" style="height:50px;width:50px"></a></li>
+							<li><a href="https://www.facebook.com/miguelangel.ruizmariscal" target="blank"><img src="images/facebook.png" style="height:50px;width:50px"></a></li>
+							<li><a href="https://www.instagram.com/miguelangelruizmariscal/" target="blank"><img src="images/instagram.png" style="height:50px;width:50px"></a></li>
+							<li><a href="https://wa.me/34686378229?text=Hola%20Caracola!" target="blank"><img src="images/WhatsApp.png" style="height:50px;width:65px"></a></li>
+							<li><a href="mailto:marmariscal@hotmail.com" target="blank"><img src="images/mail.png" style="height:50px;width:50px"></a></li>							
 						</ul>
 						<p class="copyright">&copy; IES Virgen del Carmen 2022<a href="https://www.iesvirgendelcarmen.com"></a></p>
 					</div>
