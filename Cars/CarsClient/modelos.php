@@ -1,7 +1,6 @@
 <?php
     require_once 'client.php';
     $marca = $_GET['marca'];
-    $marcaWithoutQuotes = str_replace('\'', '', $marca);
     $modelos = $client->ObtenerModelos($marca);
     $marcas=$client->ObtenerMarcas();
 ?>
@@ -37,14 +36,14 @@
 <body>
 
 
-<h1>Modelos disponibles por marca: <?=$marcaWithoutQuotes?></h1>
+<h1>Modelos disponibles por marca: <?=$marcas[$marca]?></h1>
 
 <?php
     foreach ($modelos as $modelo => $modelValue) {
 ?>
 
     <figure>
-        <img src="Marcas/<?=strtolower($marcas[$marca])?>.png" alt="logo <?= $marcas[$marca]?>" />
+        <img src="Modelos/<?=$modelos[$modelo]?>.jpg" alt="logo <?= $modelos[$modelo]?>.jpg" />
         <figcaption><?=$modelValue?></figcaption>
      </figure>
 
