@@ -34,9 +34,9 @@
     </style>
 </head>
 <body>
-
-
-<h1>Modelos disponibles por marca: <?=$marcas[$marca]?></h1>
+<img src="Marcas/<?= strtolower($marcas[$marca]) ?>.png" alt="<?= $marcas[$marca] ?>" />
+    
+<h1>Modelos disponibles para la marca "<?=$marcas[$marca]?>"</h1>
 
 <?php
     foreach ($modelos as $modelo => $modelValue) {
