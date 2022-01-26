@@ -24,17 +24,19 @@
 				<div class="thumbnails">
 <?php
 require_once 'client.php';
+
 $marcas=$client->ObtenerMarcas();
 $url=$client->ObtenerMarcasUrl();
-foreach ($marcas as $idmarca => $valorMarca) {
+
+foreach ($marcas as $idmarca => $valorMarca) {	
 ?>
 				<div class="box">
-					<a href="<?=$url[$idmarca]?>" class="image fit" data-poptrox="iframe,600x400" title="Ver video de la marca <?= $valorMarca ?>"><img src="Marcas/<?= strtolower($valorMarca) ?>.png" alt="logo <?= $valorMarca ?>" /></a>
+					<a href="<?=$url[$valorMarca]?>" class="image fit" data-poptrox="youtube,600x400" title="Ver video de la marca <?= $valorMarca ?>"><img src="Marcas/<?= strtolower($valorMarca) ?>.png" alt="logo <?= $valorMarca ?>" /></a>
 						<div class="inner">
-							<h3><a href="modelos.php?marca='<?= $valorMarca ?>'" data-poptrox="ajax,600x400">Modelos <?= $valorMarca ?></a></h3>
-							<a href="<?=$url[$idmarca]?>" class="button style2 " data-poptrox="iframe,600x400">Ver video <?= $valorMarca ?></a>
+							<h3><a href="modelos.php?marca=<?= $idmarca ?>" data-poptrox="ajax,600x400">Modelos <?= $valorMarca ?></a></h3>
+							<a href="<?=$url[$valorMarca]?>" class="button style2 " data-poptrox="youtube,600x400">Ver video <?= $valorMarca ?></a>
 						</div>
-				</div>
+				</div>			
 <?php
 }
 ?>
